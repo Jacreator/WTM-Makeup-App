@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WTM Makeup App</string>
+    <string name="makeup_title">Makeup Title</string>
+    <string name="preview">Preview</string>
+    <string name="next">next</string>
+    <string name="image_description">images of makeup</string>
 </resources>
