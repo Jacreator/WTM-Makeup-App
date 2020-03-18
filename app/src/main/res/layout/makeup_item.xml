@@ -13,7 +13,8 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/ic_launcher_background"
+        android:onClick="openMakeup"/>
 
     <TextView
         android:id="@+id/title"

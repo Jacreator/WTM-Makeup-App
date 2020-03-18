@@ -22,14 +22,14 @@
 
     <ImageView
         android:id="@+id/imageDisplay"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="355dp"
+        android:layout_height="176dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/image_description"
         app:layout_constraintEnd_toStartOf="@+id/guide_right"
         app:layout_constraintStart_toStartOf="@+id/guide_left"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/ic_launcher_background" />
 
     <View
         android:id="@+id/view"
@@ -55,11 +55,12 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="371dp"
-        android:layout_height="447dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="359dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toStartOf="@+id/guide_right"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="@+id/guide_left"
         app:layout_constraintTop_toBottomOf="@+id/makeup_title" />
 
@@ -67,10 +68,11 @@
         android:id="@+id/preview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_btn"
-        android:textColor="@color/buttonTextColor"
         android:text="@string/preview"
+        android:textColor="@color/buttonTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guide_left"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
@@ -82,6 +84,7 @@
         android:background="@drawable/rounded_btn"
         android:textColor="@color/buttonTextColor"
         android:text="@string/next"
+        android:onClick="nextItem"
         app:layout_constraintEnd_toStartOf="@+id/guide_right"
         app:layout_constraintTop_toTopOf="@+id/preview" />
 </androidx.constraintlayout.widget.ConstraintLayout>

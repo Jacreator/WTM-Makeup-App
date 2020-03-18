@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.Arrays;
@@ -68,5 +70,10 @@ public class MainActivity extends AppCompatActivity {
         makeupList = Arrays.asList(JSONUtils.parseMakeupJson(jsonString));
         Toast.makeText(getApplicationContext(), makeupList.get(0).getMakeupTitle(), Toast.LENGTH_LONG).show();
         mRecyclerView.setAdapter(new MakeupAdapter(makeupList));
+    }
+
+    public void openMakeup(View view) {
+        Intent intent = new Intent(this, MakeupDisplayer.class);
+        startActivity(intent);
     }
 }
