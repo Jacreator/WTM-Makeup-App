@@ -6,6 +6,7 @@
     android:orientation="horizontal"
     android:layout_marginBottom="4dp"
     android:layout_marginTop="4dp"
+    android:background="@android:color/darker_gray"
     android:paddingEnd="16dp"
     android:paddingStart="16dp">
 
@@ -30,7 +31,15 @@
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:text="Hello Makeup"
-            android:layout_marginStart="100dp"/>
+            android:textColor="@android:color/black"
+            android:layout_marginStart="120dp"/>
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="summary"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="120dp"/>
     </androidx.cardview.widget.CardView>
 
 

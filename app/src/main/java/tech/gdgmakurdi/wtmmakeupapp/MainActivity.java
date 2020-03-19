@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMakeup(View view) {
         Intent intent = new Intent(this, MakeupDisplayer.class);
+
         startActivity(intent);
     }
 }

@@ -30,6 +30,8 @@ public class MakeupAdapter extends RecyclerView.Adapter<MakeupAdapter.MakeupView
     public void onBindViewHolder(@NonNull MakeupAdapter.MakeupViewHolder holder, int position) {
         Makeup makeup = makeupList.get(position);
         holder.titleTextView.setText(makeup.getMakeupTitle());
+        holder.summary.setText(makeup.getSummary());
+
     }
 
     @Override
@@ -41,11 +43,13 @@ public class MakeupAdapter extends RecyclerView.Adapter<MakeupAdapter.MakeupView
 
         public ImageView thumbnailImageView;
         public TextView titleTextView;
+        public TextView summary;
         public MakeupViewHolder(@NonNull View itemView) {
             super(itemView);
 
             thumbnailImageView = itemView.findViewById(R.id.thumb);
             titleTextView = itemView.findViewById(R.id.title);
+            summary = itemView.findViewById(R.id.summary);
         }
     }
 }
