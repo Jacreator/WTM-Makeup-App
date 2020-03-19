@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/viewLine"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginTop="16dp"
@@ -51,16 +51,16 @@
         android:text="@string/makeup_title"
         app:layout_constraintEnd_toStartOf="@+id/guide_right"
         app:layout_constraintStart_toStartOf="@+id/guide_left"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/viewLine" />
 
     <View
-        android:id="@+id/view2"
-        android:layout_width="359dp"
+        android:id="@+id/viewBody"
+        android:layout_width="0dp"
         android:layout_height="323dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toStartOf="@+id/guide_right"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="@+id/guide_left"
         app:layout_constraintTop_toBottomOf="@+id/makeup_title" />
 
@@ -75,7 +75,7 @@
         android:textColor="@color/buttonTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guide_left"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/viewBody" />
 
     <Button
         android:id="@+id/next"
